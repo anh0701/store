@@ -4,7 +4,7 @@ services:
     env_file:
       - ./.env
     ports:
-      - 1433:1433
+      - 5533:1433
     volumes:
       - test-vol:/var/opt/mssql
 volumes:
