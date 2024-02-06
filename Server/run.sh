@@ -1,7 +1,7 @@
 echo "Which option do you choose?"
 PS3="Select the operation: "
 sudo  systemctl start docker
-select yn in "create compose file and run container" "run container" "stop and remove container created by up" "create volume" "remove volume" "cancel"; do
+select yn in "create compose file and run container" "run container" "list container" "logs container" "stop and remove container created by up" "create volume" "remove volume" "cancel"; do
     case $yn in
         create\ compose\ file\ and\ run\ container ) 
             read -p "Enter the volumes name: " n1
@@ -19,6 +19,13 @@ select yn in "create compose file and run container" "run container" "stop and r
         run\ container )
             read -p "Enter the path to compose file: " composeup
             sudo docker-compose -f $composeup up -d
+            ;;
+        list\ container )
+            sudo docker ps
+            ;;
+        logs\ container )
+            read -p "Enter the name container: " container
+            sudo docker logs $container
             ;;
         stop\ and\ remove\ container\ created\ by\ up )
             read -p "Enter the path to compose file: " composedown
