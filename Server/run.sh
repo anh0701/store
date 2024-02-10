@@ -18,7 +18,7 @@ select yn in "create compose file and run container" "run container" "list conta
             ;;
         run\ container )
             read -p "Enter the path to compose file: " composeup
-            sudo docker-compose -f $composeup up -d
+            sudo docker-compose -f $composeup up
             ;;
         list\ container )
             sudo docker ps

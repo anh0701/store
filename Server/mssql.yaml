@@ -6,7 +6,7 @@ services:
     ports:
       - 5533:1433
     volumes:
-      - test-vol:/var/opt/mssql
+      - store-vol:/var/opt/mssql
 volumes:
-  test-vol:
+  store-vol:
     external: true
