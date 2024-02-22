@@ -10,7 +10,7 @@ select yn in "create compose file and run container" "run container" "list conta
             sudo docker volume create $n1
             mkdir output/$n1
             cp .env mssql.yaml output/$n1
-            sed -i 's/test-vol/'$n1'/g' output/$n1/mssql.yaml
+            sed -i 's/store-vol/'$n1'/g' output/$n1/mssql.yaml
             sed -i 's/YourStrong@Passw0rd/'$n2'/g' output/$n1/.env
             # cat output/$n1/mssql.yaml
             sudo docker-compose -f mssql.yaml up -d
