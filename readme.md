@@ -1,8 +1,9 @@
 ## setup .net for linux
-- [mint linux/ubuntu](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet9&pivots=os-linux-ubuntu-2404)
+- [ubuntu](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet9&pivots=os-linux-ubuntu-2404)
 - [debian](https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian?tabs=dotnet9)
 - [fedora](https://learn.microsoft.com/en-us/dotnet/core/install/linux-fedora?tabs=dotnet9)
 
+- [linux-mint-LMDE-6-Faye]
 ## hot reload 
 ```sh
     dotnet watch run
