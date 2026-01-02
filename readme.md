@@ -3,7 +3,7 @@
 - [debian](https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian?tabs=dotnet9)
 - [fedora](https://learn.microsoft.com/en-us/dotnet/core/install/linux-fedora?tabs=dotnet9)
 
-- [linux-mint-LMDE-6-Faye]
+- [linux-mint-LMDE-6-Faye](linux-mint-LMDE-6-Faye.md)
 ## hot reload 
 ```sh
     dotnet watch run
